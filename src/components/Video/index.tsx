@@ -5,16 +5,18 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 
 import ModalVideo from "react-modal-video";
+import { useTranslations } from "next-intl";
 
 const Video = () => {
   const [isOpen, setOpen] = useState(false);
+  const t = useTranslations("video")
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="We are ready to help"
-          paragraph="Nurturing the talent of the actors and film creators by providing them with the best education."
+          title={t('we-are-ready-to-help')}
+          paragraph={t('nurturing-the-talent')}
           center
           mb="80px"
         />

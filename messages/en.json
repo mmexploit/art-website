@@ -1,0 +1,76 @@
+{
+  "Aim": {
+    "title": "Who We Are & Our Aim",
+    "description": "Abiya was born from a simple belief: Talent is everywhere, but opportunity is rare. We are committed to bringing world-class training and a global stage to the artists who shape the world's narratives. Our team is made up of industry pioneers and passionate mentors whose commitment goes beyond teaching they're here to inspire and equip you for a lifelong career in film.",
+    "founderTitle": "Founder's Message -",
+    "founderDescription": "“Our vision is to see the art of storytelling become the heartbeat of the world's culture.\"",
+    "founderName": "– Gezahegn"
+  },
+  "aboutOne": {
+    "list1": "Consultations",
+    "better-payment": "Better payment",
+    "proper-ethics": "Proper ethics",
+    "better-educated-proffesionals": "Better educated proffesionals",
+    "accredited": "Accredited",
+    "internationally-recognized": "Internationally Recognized",
+    "elevate-actors-and-film-creators": "Elevate actors and film creators",
+    "the-main-thrust": "The main ‘thrust’ is to focus on educating workers in the film making and acting industry better equipped with the proper ethics and quality."
+  },
+  "aboutTwo": {
+    "better-education": "Better Education",
+    "nurture": "Nurture the talent of the actors and film creators by providing them with the best education.",
+    "better-payment": "Better Payment",
+    "enable": "Enable the actors and film creators to earn a better living by enabling them to get a job with better payment.",
+    "proper-ethics": "Proper Ethics",
+    "teach": "Teach the actors and film creators the proper ethics to follow in the industry."
+  },
+  "features": {
+    "cast-agents": "Cast Agents",
+    "team-of-experienced": "We have a team of experienced agents who are ready to help you.",
+    "script-preparation": "Script Preparation",
+    "prepare-your-script": "We help you prepare your script for your next project.",
+    "tv-dramas": "TV Dramas",
+    "make-the-best-tv-dramas": "We help you make the best TV dramas for your audience.",
+    "radio-dramas": "Radio Dramas",
+    "best-radio-dramas": "We help you make the best radio dramas for your audience.",
+    "theatres": "Theatres",
+    "aid-in-the-production": "We aid in the production of the best theatres for your audience.",
+    "event-management": "Event Management",
+    "manage-your-events": "We help you manage your events to make them successful.",
+    "acting-scripting-and-modeling-classes": "Acting, Scripting, and Modeling Classes",
+    "we-offer-classes": "We offer classes to help you improve your acting and modelling skills."
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "blogs": "Blogs",
+    "support": "Support",
+    "our-proffesionals": "Our Proffesionals"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {🇩🇪 French} en {🇺🇸 English} other {Unknown}}"
+  },
+  "hero": {
+    "master-the-art": "Master the Art of Filmmaking from Vision to Screen",
+    "hero-description": "Step into the world of cinema, where your creativity meets cutting-edge technology and industry expertise. Our film school offers hands-on experience in screenwriting, directing, cinematography, and post-production, led by seasoned professionals.",
+    "our-proffessionals": "Our Proffessionals",
+    "contact-us": "Contact Us"
+  },
+  "video": {
+    "we-are-ready-to-help": "We are ready to help",
+    "nurturing-the-talent": "Nurturing the talent of the actors and film creators by providing them with the best education."
+  },
+  "partners": {
+    "our": "Our",
+    "partners": "Partners"
+  },
+  "footer": {
+    "footer-description": "Step into the world of cinema, where your creativity meets cutting-edge technology and industry expertise",
+    "useful-links": "Useful Links",
+    "blogs": "Blogs",
+    "about": "About",
+    "terms": "Terms",
+    "support-and-help": "Support & Help"
+  }
+}
