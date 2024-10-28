@@ -1,12 +1,23 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { useTranslations } from "next-intl";
+import { Menu } from "@/types/menu";
+import LocaleSwitcher from "./locale-switcher";
 
 const Header = () => {
+  const t = useTranslations("header");
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -38,6 +49,41 @@ const Header = () => {
 
   const usePathName = usePathname();
 
+  const [language, setLanguage] = useState("en");
+  const router = useRouter();
+
+  const handleLanguageChange = (newLanguage: string) => {
+    setLanguage(newLanguage);
+    router.push(newLanguage);
+  };
+
+  const menuData: Menu[] = [
+    {
+      id: 1,
+      title: t("home"),
+      path: "/",
+      newTab: false,
+    },
+    {
+      id: 2,
+      title: t("about"),
+      path: "/about",
+      newTab: false,
+    },
+    {
+      id: 33,
+      title: t("blogs"),
+      path: "/blogs",
+      newTab: false,
+    },
+    {
+      id: 3,
+      title: t("support"),
+      path: "/contact",
+      newTab: false,
+    },
+  ];
+
   return (
     <>
       <header
@@ -56,7 +102,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <p className="font-bold text-2xl text-amber-600">Abiya & Co.</p>
+                <p className="text-2xl font-bold text-amber-600">Abiya & Co.</p>
                 {/* <Image
                   src="/images/logo/logo-2.svg"
                   alt="logo"
@@ -159,18 +205,13 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/* <Link
-                  href="/signin"
-                  className="hidden px-7 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                </Link> */}
+              <div className="flex items-center justify-end gap-4  pr-16 lg:pr-0">
+                <LocaleSwitcher />
                 <Link
                   href="/workers"
                   className="ease-in-up hidden rounded-sm bg-amber-600 px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Our Proffesionals
+                  {t('our-proffesionals')}
                 </Link>
                 <div>
                   <ThemeToggler />

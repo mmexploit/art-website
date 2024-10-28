@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const AboutSectionTwo = () => {
+  const t = useTranslations('aboutTwo');
+
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -28,26 +31,26 @@ const AboutSectionTwo = () => {
             <div className="max-w-[470px]">
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Better Education
+                  {t('better-education')}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Nurture the talent of the actors and film creators by providing them with the best education.
+                  {t('nurture')}
                 </p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Better Payment
+                  {t('better-payment')}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Enable the actors and film creators to earn a better living by enabling them to get a job with better payment.
+                  {t('enable')}
                 </p>
               </div>
               <div className="mb-1">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Proper Ethics
+                  {t('proper-ethics')}
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Teach the actors and film creators the proper ethics to follow in the industry.
+                  {t('teach')}
                 </p>
               </div>
             </div>

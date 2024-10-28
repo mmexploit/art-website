@@ -1,0 +1,76 @@
+{
+  "Aim": {
+    "title": "Qui nous sommes",
+    "description": "Abiya est née d'une conviction simple : le talent est partout, mais les opportunités sont rares. \nNous nous engageons à offrir une formation de classe mondiale et une scène mondiale aux artistes qui façonnent les récits du monde. \nNotre équipe est composée de pionniers de l'industrie et de mentors passionnés dont l'engagement va au-delà de l'enseignement. Ils sont là pour vous inspirer et vous équiper pour une carrière de toute une vie dans le cinéma.",
+    "founderTitle": "Message du fondateur -",
+    "founderDescription": "\"Notre vision est de voir l'art du récit devenir le cœur de la culture mondiale.\"",
+    "founderName": "– Gezahegn"
+  },
+  "aboutOne": {
+    "list1": "Consultations",
+    "better-payment": "Meilleur paiement",
+    "proper-ethics": "Une bonne éthique",
+    "better-educated-proffesionals": "Des professionnels mieux formés",
+    "internationally-recognized": "Reconnu internationalement",
+    "elevate-actors-and-film-creators": "Élever les acteurs et les créateurs de films",
+    "the-main-thrust": "L’objectif principal est de se concentrer sur la formation des travailleurs de l’industrie du cinéma et du théâtre, mieux équipés en matière d’éthique et de qualité."
+  },
+  "aboutTwo": {
+    "nurture": "Nourrir le talent des acteurs et des créateurs de films en leur offrant la meilleure éducation.",
+    "better-payment": "Meilleur paiement",
+    "enable": "Permettre aux acteurs et aux créateurs de films de mieux gagner leur vie en leur permettant d'obtenir un emploi mieux rémunéré.",
+    "proper-ethics": "Une bonne éthique",
+    "teach": "Enseigner aux acteurs et aux créateurs de films l'éthique appropriée à suivre dans l'industrie.",
+    "better-education": "Une meilleure éducation"
+  },
+  "features": {
+    "cast-agents": "Agents de distribution",
+    "team-of-experienced": "Nous avons une équipe d'agents expérimentés prêts à vous aider.",
+    "script-preparation": "Préparation du scénario",
+    "prepare-your-script": "Nous vous aidons à préparer votre scénario pour votre prochain projet.",
+    "tv-dramas": "Séries télévisées",
+    "make-the-best-tv-dramas": "Nous vous aidons à créer les meilleures séries télévisées pour votre public.",
+    "radio-dramas": "Drames radiophoniques",
+    "best-radio-dramas": "Nous vous aidons à créer les meilleures dramatiques radiophoniques pour votre public.",
+    "theatres": "Théâtres",
+    "aid-in-the-production": "Nous aidons à la production des meilleurs théâtres pour votre public.",
+    "event-management": "Gestion d'événements",
+    "manage-your-events": "Nous vous aidons à gérer vos événements pour les réussir.",
+    "acting-scripting-and-modeling-classes": "Cours de théâtre, de script et de modélisation",
+    "we-offer-classes": "Nous proposons des cours pour vous aider à améliorer vos compétences d'acteur et de mannequin."
+  },
+  "header": {
+    "home": "Maison",
+    "about": "À propos",
+    "blogs": "Blogues",
+    "support": "Soutien",
+    "our-proffesionals": "Nos professionnels"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {FR français} en {🇺🇸 anglais} autre {Inconnu}}"
+  },
+  "hero": {
+    "master-the-art": "Maîtrisez l’art du cinéma, de la vision à l’écran",
+    "our-proffessionals": "Nos professionnels",
+    "contact-us": "Contactez-nous",
+    "hero-description": "Entrez dans le monde du cinéma, où votre créativité rencontre la technologie de pointe et l’expertise industrielle. \nNotre école de cinéma offre une expérience pratique en scénarisation, réalisation, cinématographie et post-production, dirigée par des professionnels chevronnés."
+  },
+  "video": {
+    "we-are-ready-to-help": "Nous sommes prêts à vous aider",
+    "nurturing-the-talent": "Développer le talent des acteurs et des créateurs de films en leur offrant la meilleure éducation."
+  },
+  "partners": {
+    "our": "Notre",
+    "partners": "Partenaires"
+  },
+  "footer-description": "",
+  "footer": {
+    "footer-description": "Entrez dans le monde du cinéma, où votre créativité rencontre la technologie de pointe et l'expertise industrielle",
+    "useful-links": "Liens utiles",
+    "blogs": "Blogues",
+    "about": "À propos",
+    "terms": "Termes",
+    "support-and-help": "Soutien"
+  }
+}

@@ -1,8 +1,11 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const t = useTranslations("footer");
+
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -16,7 +19,7 @@ const Footer = () => {
                   </p>
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Step into the world of cinema, where your creativity meets cutting-edge technology and industry expertise
+                {t('footer-description')}
                 </p>
                 <div className="flex items-center">
                   <a
@@ -100,7 +103,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
+                  {t('useful-links')}
                 </h2>
                 <ul>
                   <li>
@@ -108,7 +111,7 @@ const Footer = () => {
                       href="/blogs"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blogs
+                      {t('blogs')}
                     </Link>
                   </li>
                  
@@ -117,7 +120,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      {t('about')}
                     </Link>
                   </li>
                 </ul>
@@ -127,7 +130,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Terms
+                  {t('terms')}
                 </h2>
                 <ul>
                   <li>
@@ -161,7 +164,7 @@ const Footer = () => {
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Support & Help
+                  {t('support-and-help')}
                 </h2>
                 <ul>
                   <li>

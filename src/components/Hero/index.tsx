@@ -1,6 +1,9 @@
+"use client"
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Hero = () => {
+  const t = useTranslations("hero")
   return (
     <>
       <section
@@ -13,27 +16,23 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Master the Art of Filmmaking from Vision to Screen
+                  {t('master-the-art')}
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Step into the world of cinema, where your creativity meets
-                  cutting-edge technology and industry expertise. Our film
-                  school offers hands-on experience in screenwriting, directing,
-                  cinematography, and post-production, led by seasoned
-                  professionals. 
+                  {t('hero-description')} 
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/professionals"
                     className="rounded-sm bg-amber-600 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Our Proffessionals
+                    {t('our-proffessionals')}
                   </Link>
                   <Link
                     href="/contact"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    Contact Us
+                    {t('contact-us')}
                   </Link>
                 </div>
               </div>
