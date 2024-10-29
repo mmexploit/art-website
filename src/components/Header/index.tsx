@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { useParams, usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import {
@@ -49,13 +49,7 @@ const Header = () => {
 
   const usePathName = usePathname();
 
-  const [language, setLanguage] = useState("en");
-  const router = useRouter();
-
-  const handleLanguageChange = (newLanguage: string) => {
-    setLanguage(newLanguage);
-    router.push(newLanguage);
-  };
+  const { locale } = useParams();
 
   const menuData: Menu[] = [
     {
@@ -156,7 +150,7 @@ const Header = () => {
                       <li key={index} className="group relative">
                         {menuItem.path ? (
                           <Link
-                            href={menuItem.path}
+                            href={`/${locale.toString()}/${menuItem.path}`}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary dark:text-white"
@@ -208,10 +202,10 @@ const Header = () => {
               <div className="flex items-center justify-end gap-4  pr-16 lg:pr-0">
                 <LocaleSwitcher />
                 <Link
-                  href="/workers"
+                  href={`/${locale.toString()}/workers`}
                   className="ease-in-up hidden rounded-sm bg-amber-600 px-8 py-3 text-base font-medium text-white shadow-btn transition duration-300 hover:bg-opacity-90 hover:shadow-btn-hover md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  {t('our-proffesionals')}
+                  {t("our-proffesionals")}
                 </Link>
                 <div>
                   <ThemeToggler />
