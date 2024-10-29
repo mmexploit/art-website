@@ -1,9 +1,11 @@
 "use client"
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const Hero = () => {
-  const t = useTranslations("hero")
+  const t = useTranslations("hero");
+  const { locale} = useParams()
   
   return (
     <>
@@ -24,13 +26,13 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-                    href="/professionals"
+                    href={`/${locale.toString()}/workers`}
                     className="rounded-sm bg-amber-600 px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     {t('our-proffessionals')}
                   </Link>
                   <Link
-                    href="/contact"
+                    href={`/${locale.toString()}/contact`}
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     {t('contact-us')}
