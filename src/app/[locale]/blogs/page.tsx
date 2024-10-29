@@ -13,10 +13,12 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from '@/components/ui/button';
+import { useParams } from 'next/navigation';
 
 const Blogs = () => {
   
   const [blogs, setBlogs] = useState([]);
+  const { locale} = useParams()
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -40,7 +42,7 @@ const Blogs = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 space-y-10 md:space-y-0 p-4">
         {blogs.map((blog) => (
-          <Link key={blog._id} href={`/blogs/${blog._id}`} className="relative group">
+          <Link key={blog._id} href={`/${locale.toString()}/blogs/${blog._id}`} className="relative group">
             <img src={blog.thumbnailUrl} alt={blog.title} className="w-full h-64 object-cover rounded-md" />
             <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 p-4 transform translate-y-0 group-hover:translate-y-full group-hover:bg-primary group-hover:text-white group-hover:rounded-b-xl transition-transform duration-300">
               <h2 className="text-white font-bold">{blog.title}</h2>

@@ -2,9 +2,11 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const Footer = () => {
   const t = useTranslations("footer");
+  const { locale} = useParams()
 
   return (
     <>
@@ -108,7 +110,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/blogs"
+                      href={`/${locale.toString()}/blogs`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       {t('blogs')}
@@ -117,7 +119,7 @@ const Footer = () => {
                  
                   <li>
                     <Link
-                      href="/about"
+                      href={`/${locale.toString()}/about`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       {t('about')}
@@ -141,7 +143,7 @@ const Footer = () => {
                       TOS
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
@@ -156,7 +158,7 @@ const Footer = () => {
                     >
                       Refund Policy
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -169,7 +171,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="/contact"
+                      href={`/${locale.toString()}/contact`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket
@@ -185,7 +187,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/about"
+                      href={`/${locale.toString()}/about`}
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About
