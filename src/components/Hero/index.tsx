@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
   const t = useTranslations("hero")
+  
   return (
     <>
       <section

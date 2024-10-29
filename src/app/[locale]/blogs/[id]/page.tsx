@@ -28,43 +28,7 @@ import {
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 const BlogDetails = () => {
-       const services = [
-  {
-    title: "Mediation",
-    href: "/services#mediation",
    
-  },
-  {
-    title: "Family Case",
-    href: "/services#family",
-  
-  },
-  {
-    title: "Succession",
-    href: "/services#succession",
-   
-  },
-  {
-    title: "Tax",
-    href: "/services#tax",
-
-  },
-  {
-    title: "Employment Law",
-    href: "/services#employment",
-
-  },
-  {
-    title: "Contract",
-    href: "/services#contract",
-   
-  },
-  {
-    title: "View All",
-    href: "/services",
-   
-  },
-]
   const [blog, setBlog] = useState(null);
   const [error, setError] = useState(null); // To handle errors
   const params = useParams(); // Get the parameters from the URL
@@ -105,6 +69,9 @@ const BlogDetails = () => {
 };
 
 export default BlogDetails;
+
+
+
 
 
 
